@@ -6,6 +6,7 @@
     <layout name="npxnabnsnfns01000000001" font="Fb Maya" controllayout="npxnabnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
     <layout name="npnxnanbnsnfns01000000001" font="Fb Maya" controllayout="npnxnanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
     <layout name="pxabnsnfns01000000000" font="Fb Maya" controllayout="pxabnsnfns01000000000" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
+    <layout name="pxnanbnsnfns01000000001" font="Fb Maya" controllayout="pxnanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -19,7 +20,7 @@
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/5pHOy95pMb0.png" />
+              <option name="html5_logo_url" value="mobile/5tr4Ga0T5Fh.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
@@ -221,6 +222,30 @@
         </controls>
       </control>
       <control name="close_btn" enabled="false" />
+    </control_layout>
+    <control_layout name="pxnanbnsnfns01000000001">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="true" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="fullScreenToggle" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="false">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
     </control_layout>
   </control_layouts>
   <colorschemes>
@@ -1403,151 +1428,151 @@
   </colorschemes>
   <string_tables>
     <string_table name="npnxnanbnsnfns01000000001">
-      <string id="three_image_progress_audio">התקדמות</string>
-      <string id="three_image_audio"> שמע</string>
-      <string id="three_image_camera_down">המצלמה זזה כלפי מעלה</string>
-      <string id="three_image_camera_left">המצלמה זזה שמאלה</string>
-      <string id="three_image_camera_right">המצלמה זזה ימינה</string>
-      <string id="three_image_camera_up">המצלמה זזה כלפי מטה</string>
-      <string id="three_image_interaction_free">מצב חקר חופשי</string>
-      <string id="three_image_interaction_guided">מצב סיור מודרך</string>
-      <string id="three_image_hotspot">נקודה חמה</string>
-      <string id="three_image_instructions">השתמש במקשי s, a, w ו- d כדי לנוע סביב תמונת ה- 360 מעלות הקש על מקש התוית כדי לעבור לסמנים אינטראקטיביים ולנקודות חמות.</string>
-      <string id="three_image_interaction">אינטראקציית תמונה של 360 מעלות</string>
-      <string id="three_image_label">תווית</string>
-      <string id="three_image_marker">סמן</string>
-      <string id="three_image_items">פריטים</string>
-      <string id="three_image_interaction_next">הבא</string>
-      <string id="three_image_pause_audio">עצירת שמע</string>
-      <string id="three_image_pause_video">עצירת הסרטון</string>
-      <string id="three_image_play_audio">השמעת שמע</string>
-      <string id="three_image_play_video">הפעלת הסרטון</string>
-      <string id="three_image_interaction_prev">הקודם</string>
-      <string id="three_image_visited">ביקרו בהם</string>
-      <string id="three_image_of">מתוך</string>
-      <string id="three_image_count_of_total">%count% מתוך %total%</string>
-      <string id="acc_three_image_step_count_of_total">שלב %count% מתוך %total%</string>
-      <string id="three_image_item">פריט</string>
-      <string id="three_image_interaction_step">שלב</string>
-      <string id="three_image_tooltip">רמז-צץ</string>
-      <string id="three_image_total_items">%total% פריטים</string>
-      <string id="three_image_total_item">פריט %total%</string>
-      <string id="three_image_progress_video"> התקדמות</string>
-      <string id="three_image_video">סרטון</string>
-      <string id="three_image_video_volume">עוצמת הקול של הסרטון</string>
-      <string id="acc_three_image_count_of_total_items_visited">%count% מתוך %total% פריטים נצפו</string>
-      <string id="acc_three_image_count_of_total_item_visited"> פריט %count% מתוך %total% נצפה</string>
-      <string id="three_image_count_of_total_visited">%count% מתוך %total% נצפו</string>
-      <string id="accessible_text">מלל נגיש</string>
+      <string id="acc_active">פעיל</string>
+      <string id="acc_closed_captions">כתוביות מקודדות. הקש על מקש הרווח כדי להפעיל ולכבות כתוביות.</string>
+      <string id="acc_definition">הגדרה</string>
       <string id="acc_enter_fullscreen">כניסה למצב מסך מלא</string>
       <string id="acc_exit_fullscreen">יציאה ממצב מסך מלא</string>
-      <string id="keyboardshortcuts_lower">קיצורי מקשים</string>
-      <string id="zoom_to_fit">תקריב כדי שיתאים</string>
-      <string id="modern_video_settings_close">סגירת הגדרות סרטון</string>
+      <string id="acc_finish">סיום</string>
+      <string id="acc_locked">נעולים</string>
+      <string id="acc_modern_video_captions">לכידות של הסרטון</string>
       <string id="acc_modern_video_fullscreen">סרטון במסך מלא</string>
-      <string id="modern_video_playback_settings">הגדרות פסקול של סרטון</string>
-      <string id="modern_video_captions_off">כבוי</string>
-      <string id="modern_video_captions_on">פוכל</string>
-      <string id="modern_video_captions_label">לכידות</string>
-      <string id="acc_modern_video_settings">הגדרות סרטון</string>
       <string id="acc_modern_video_mute">השתקת הסרטון</string>
-      <string id="modern_video_normal_speed">רגילה</string>
       <string id="acc_modern_video_pause">עצירת הסרטון</string>
       <string id="acc_modern_video_pip">תמונה בתוך תמונה</string>
       <string id="acc_modern_video_play">הפעלת הסרטון</string>
-      <string id="modern_video_playback_speed_title">מהירות פסקול</string>
-      <string id="acc_modern_video_captions">לכידות של הסרטון</string>
       <string id="acc_modern_video_playback_speed">מהירות פסקול</string>
+      <string id="acc_modern_video_settings">הגדרות סרטון</string>
       <string id="acc_modern_video_volume">עוצמת הקול של הסרטון</string>
-      <string id="acc_active">פעיל</string>
+      <string id="acc_next">הבא</string>
+      <string id="acc_pause">השהה</string>
+      <string id="acc_play">הפעל</string>
+      <string id="acc_previous">הקודם</string>
+      <string id="acc_replay">הפעל מחדש</string>
+      <string id="acc_resources">משאבים</string>
+      <string id="acc_search_input">חיפוש</string>
+      <string id="acc_skipnavigation">חזור למעלה</string>
+      <string id="acc_slide_progress">התקדמות השקופית</string>
+      <string id="acc_submit">שלח</string>
+      <string id="acc_submitall">שלח הכול</string>
+      <string id="acc_three_image_count_of_total_item_visited"> פריט %count% מתוך %total% נצפה</string>
+      <string id="acc_three_image_count_of_total_items_visited">%count% מתוך %total% פריטים נצפו</string>
+      <string id="acc_three_image_step_count_of_total">שלב %count% מתוך %total%</string>
+      <string id="acc_visited">ביקרו בהם</string>
+      <string id="acc_volume">עוצמת קול</string>
+      <string id="accessible_text">מלל נגיש</string>
+      <string id="acctext_shortcut">הפעלת מלל נגיש</string>
+      <string id="action">פעולה</string>
       <string id="alt_key">Alt</string>
+      <string id="bio">ביוגרפיה</string>
       <string id="check_include">סמן כדי לכלול</string>
       <string id="clear">נקה וחזור לתפריט</string>
       <string id="close">סגור</string>
-      <string id="acc_closed_captions">כתוביות מקודדות. הקש על מקש הרווח כדי להפעיל ולכבות כתוביות.</string>
+      <string id="closed_captions">כתוביות</string>
       <string id="closed_captions_tip">החלפת כתוביות</string>
+      <string id="closedcaptions_shortcut">החלף כיתובים סגורים</string>
       <string id="continue">המשך</string>
       <string id="continueresponsive">המשך</string>
       <string id="ctrl_key">Ctrl</string>
+      <string id="definition">הגדרה</string>
+      <string id="desktop_start">התחל קורס</string>
+      <string id="disabled_orientation">סובב את המכשיר שלך</string>
       <string id="enable_keyboardshortcuts">הפעלת קיצורי מקשים</string>
       <string id="enter_key">Enter</string>
       <string id="exit">יציאה</string>
       <string id="filter">סינון</string>
       <string id="finish">סיום</string>
-      <string id="acc_finish">סיום</string>
-      <string id="definition">הגדרה</string>
-      <string id="acc_definition">הגדרה</string>
-      <string id="glossary">מילון מונחים</string>
-      <string id="terms">מונחים</string>
-      <string id="progress_hour">שעה</string>
-      <string id="progress_hours">שעות</string>
-      <string id="action">פעולה</string>
-      <string id="keyboardshortcuts">קיצורי מקשים</string>
-      <string id="shortcuthelp">רשימת קיצורי מקשים</string>
-      <string id="mute_shortcut">השתקה/ביטול השתקה</string>
-      <string id="next_shortcut">השקופית הבאה</string>
-      <string id="playpause_shortcut">הפעלה/השהייה</string>
-      <string id="previous_shortcut">השקופית הקודמת</string>
-      <string id="replay_shortcut">הפעל מחדש את השקופית</string>
-      <string id="shortcut">קיצור דרך</string>
-      <string id="submit_shortcut">שלח שקופיות</string>
-      <string id="acctext_shortcut">הפעלת מלל נגיש</string>
-      <string id="closedcaptions_shortcut">החלף כיתובים סגורים</string>
       <string id="fullscreen_shortcut">מעבר למצב מסך מלא</string>
-      <string id="togglezoom">החלף זום כדי להתאים</string>
-      <string id="outline">תפריט</string>
-      <string id="disabled_orientation">סובב את המכשיר שלך</string>
-      <string id="progress_minute">דקה</string>
-      <string id="progress_minutes">דקות</string>
+      <string id="glossary">מילון מונחים</string>
+      <string id="keyboardshortcuts">קיצורי מקשים</string>
+      <string id="keyboardshortcuts_lower">קיצורי מקשים</string>
+      <string id="mobile_start">התחל קורס</string>
+      <string id="modern_video_captions_label">לכידות</string>
+      <string id="modern_video_captions_off">כבוי</string>
+      <string id="modern_video_captions_on">פוכל</string>
+      <string id="modern_video_normal_speed">רגילה</string>
+      <string id="modern_video_playback_settings">הגדרות פסקול של סרטון</string>
+      <string id="modern_video_playback_speed_title">מהירות פסקול</string>
+      <string id="modern_video_settings_close">סגירת הגדרות סרטון</string>
+      <string id="more_info">מידע נוסף</string>
+      <string id="mute_shortcut">השתקה/ביטול השתקה</string>
       <string id="mute_tip">השתקה</string>
       <string id="next">הבא</string>
-      <string id="acc_next">הבא</string>
+      <string id="next_shortcut">השקופית הבאה</string>
       <string id="next_slide_tip">השקופית הבאה</string>
-      <string id="transcript_chk">הערות</string>
-      <string id="transcript">הערות</string>
-      <string id="bio">ביוגרפיה</string>
-      <string id="more_info">מידע נוסף</string>
-      <string id="closed_captions">כתוביות</string>
-      <string id="acc_pause">השהה</string>
+      <string id="outline">תפריט</string>
       <string id="pause_tip">להשהות</string>
-      <string id="acc_play">הפעל</string>
       <string id="play_tip">הפעלה</string>
-      <string id="send_an_email">שלח הודעת דוא"ל</string>
+      <string id="playpause_shortcut">הפעלה/השהייה</string>
       <string id="prev">הקודם</string>
-      <string id="acc_previous">הקודם</string>
+      <string id="previous_shortcut">השקופית הקודמת</string>
       <string id="previous_slide_tip">השקופית הקודמת</string>
+      <string id="progress_hour">שעה</string>
+      <string id="progress_hours">שעות</string>
+      <string id="progress_minute">דקה</string>
+      <string id="progress_minutes">דקות</string>
+      <string id="progress_second">שניה</string>
+      <string id="progress_seconds">שניות</string>
       <string id="question_list">רשימת שאלות</string>
+      <string id="replay_shortcut">הפעל מחדש את השקופית</string>
       <string id="replay_tip">הפעל מחדש</string>
-      <string id="acc_replay">הפעל מחדש</string>
       <string id="resources">משאבים</string>
-      <string id="acc_resources">משאבים</string>
       <string id="restart">הפעל מחדש</string>
       <string id="resume">המשך מהיכן שהפסקת</string>
-      <string id="acc_locked">נעולים</string>
-      <string id="acc_search_input">חיפוש</string>
-      <string id="search_toggle">חיפוש</string>
-      <string id="sidebar_toggle">הצגה/הסתרה של הסרגל הצדי</string>
-      <string id="acc_slide_progress">התקדמות השקופית</string>
-      <string id="desktop_start">התחל קורס</string>
-      <string id="mobile_start">התחל קורס</string>
-      <string id="acc_visited">ביקרו בהם</string>
       <string id="search">חיפוש...</string>
       <string id="search_in">חיפוש ב:</string>
       <string id="search_results">תוצאות חיפוש</string>
-      <string id="progress_second">שניה</string>
-      <string id="progress_seconds">שניות</string>
+      <string id="search_toggle">חיפוש</string>
+      <string id="send_an_email">שלח הודעת דוא"ל</string>
       <string id="settings_tip">הגדרות</string>
       <string id="shift_key">Shift</string>
-      <string id="acc_skipnavigation">חזור למעלה</string>
+      <string id="shortcut">קיצור דרך</string>
+      <string id="shortcuthelp">רשימת קיצורי מקשים</string>
+      <string id="sidebar_toggle">הצגה/הסתרה של הסרגל הצדי</string>
       <string id="slide_text_chk">טקסט שקופית</string>
       <string id="spacebar_key">רווח</string>
-      <string id="submitall">שלח הכול</string>
-      <string id="acc_submitall">שלח הכול</string>
       <string id="submit">עבור לתרגיל הבא</string>
-      <string id="acc_submit">שלח</string>
+      <string id="submit_shortcut">שלח שקופיות</string>
       <string id="submit_tip">שלח</string>
+      <string id="submitall">שלח הכול</string>
+      <string id="terms">מונחים</string>
+      <string id="three_image_audio"> שמע</string>
+      <string id="three_image_camera_down">המצלמה זזה כלפי מעלה</string>
+      <string id="three_image_camera_left">המצלמה זזה שמאלה</string>
+      <string id="three_image_camera_right">המצלמה זזה ימינה</string>
+      <string id="three_image_camera_up">המצלמה זזה כלפי מטה</string>
+      <string id="three_image_count_of_total">%count% מתוך %total%</string>
+      <string id="three_image_count_of_total_visited">%count% מתוך %total% נצפו</string>
+      <string id="three_image_hotspot">נקודה חמה</string>
+      <string id="three_image_instructions">השתמש במקשי s, a, w ו- d כדי לנוע סביב תמונת ה- 360 מעלות הקש על מקש התוית כדי לעבור לסמנים אינטראקטיביים ולנקודות חמות.</string>
+      <string id="three_image_interaction">אינטראקציית תמונה של 360 מעלות</string>
+      <string id="three_image_interaction_free">מצב חקר חופשי</string>
+      <string id="three_image_interaction_guided">מצב סיור מודרך</string>
+      <string id="three_image_interaction_next">הבא</string>
+      <string id="three_image_interaction_prev">הקודם</string>
+      <string id="three_image_interaction_step">שלב</string>
+      <string id="three_image_item">פריט</string>
+      <string id="three_image_items">פריטים</string>
+      <string id="three_image_label">תווית</string>
+      <string id="three_image_marker">סמן</string>
+      <string id="three_image_of">מתוך</string>
+      <string id="three_image_pause_audio">עצירת שמע</string>
+      <string id="three_image_pause_video">עצירת הסרטון</string>
+      <string id="three_image_play_audio">השמעת שמע</string>
+      <string id="three_image_play_video">הפעלת הסרטון</string>
+      <string id="three_image_progress_audio">התקדמות</string>
+      <string id="three_image_progress_video"> התקדמות</string>
+      <string id="three_image_tooltip">רמז-צץ</string>
+      <string id="three_image_total_item">פריט %total%</string>
+      <string id="three_image_total_items">%total% פריטים</string>
+      <string id="three_image_video">סרטון</string>
+      <string id="three_image_video_volume">עוצמת הקול של הסרטון</string>
+      <string id="three_image_visited">ביקרו בהם</string>
+      <string id="togglezoom">החלף זום כדי להתאים</string>
+      <string id="transcript">הערות</string>
+      <string id="transcript_chk">הערות</string>
       <string id="unmute_tip">בטל השתקה</string>
-      <string id="acc_volume">עוצמת קול</string>
+      <string id="zoom_to_fit">תקריב כדי שיתאים</string>
     </string_table>
   </string_tables>
   <fonts>
@@ -1569,7 +1594,8 @@
         </slidelink>
         <slidelink slideid="_player.6RAdxN8dCDB" displaytext="שכבה צעירה" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6RAdxN8dCDB.6AbV0JhMjTu" displaytext="תרגיל 1" expand="false" type="slide" />
+            <slidelink slideid="_player.6RAdxN8dCDB.6AbV0JhMjTu" displaytext="סיפור" expand="false" type="slide" />
+            <slidelink slideid="_player.6RAdxN8dCDB.5aV2uGqld5h" displaytext="תרגיל 1" expand="false" type="slide" />
             <slidelink slideid="_player.6RAdxN8dCDB.6A9NBmVZwux" displaytext="תרגיל 3" expand="false" type="slide" />
             <slidelink slideid="_player.6RAdxN8dCDB.5qdFb6tEUnc" displaytext="סיום" expand="false" type="slide" />
             <slidelink slideid="_player.6RAdxN8dCDB.675Yh7nOGrY" displaytext="תרגיל 2" expand="false" type="slide" />
@@ -1577,7 +1603,9 @@
         </slidelink>
         <slidelink slideid="_player.6r9dPOYWU2Q" displaytext="שכבה בוגרת" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6r9dPOYWU2Q.63LCXpf8i11" displaytext="תרגיל 1" expand="false" type="slide" />
+            <slidelink slideid="_player.6r9dPOYWU2Q.63LCXpf8i11" displaytext="סיפור" expand="false" type="slide" />
+            <slidelink slideid="_player.6r9dPOYWU2Q.6YGlrLGJQvW" displaytext="סיפור" expand="false" type="slide" />
+            <slidelink slideid="_player.6r9dPOYWU2Q.5wtX5Z5liEo" displaytext="תרגיל 1" expand="false" type="slide" />
             <slidelink slideid="_player.6r9dPOYWU2Q.65M3HFxuoak" displaytext="תרגיל 1" expand="false" type="slide" />
             <slidelink slideid="_player.6r9dPOYWU2Q.6QlEjgJOEDa" displaytext="תרגיל 2" expand="false" type="slide" />
             <slidelink slideid="_player.6r9dPOYWU2Q.6VUQ0xQI2pB" displaytext="תרגיל 3" expand="false" type="slide" />
