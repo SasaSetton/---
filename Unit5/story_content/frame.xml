@@ -19,7 +19,7 @@
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/5hYvKgncQkd.png" />
+              <option name="html5_logo_url" value="mobile/5jhQFjIkmBS.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
@@ -1469,9 +1469,6 @@
       <string id="closed_captions_tip">החלפת כתוביות</string>
       <string id="continue">המשך</string>
       <string id="continueresponsive">המשך</string>
-      <string id="playback_speed_title">~Plaý~bacķ~ Sþe~ed</string>
-      <string id="playback_speed_normal">~Nøřӎ~al</string>
-      <string id="acc_playback_speed">~þlaý~bacķ~ špe~ed</string>
       <string id="ctrl_key">Ctrl</string>
       <string id="enable_keyboardshortcuts">הפעלת קיצורי מקשים</string>
       <string id="enter_key">Enter</string>
