@@ -1848,14 +1848,13 @@ body {
         right: 0px;
     }
 }
-
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1280px) {
     #universe {
         font-size: 100%;
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
     .zoom-close .scale-d #solar-system {
         margin-left: -120%;
     }
