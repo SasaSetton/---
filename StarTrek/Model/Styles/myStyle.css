@@ -1816,8 +1816,8 @@ body {
 
     #data {
         position: fixed;
-       /* top: inherit;
-        bottom: 0;*/
+       top: inherit;
+        bottom: 50px;
         width: 100%;
         text-align: center;
     }
