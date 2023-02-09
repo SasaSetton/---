@@ -307,7 +307,7 @@ body {
 
 .zoom-large.view-3D .scale-stretched #solar-system {
     font-size: 45%;
-  top: 15px;
+    top: 25px;
 }
 
 .zoom-large.view-2D .scale-d #solar-system {
@@ -772,7 +772,7 @@ body {
 /* --------------------------------------------------------------------------- text infos data */
 /* --------------------------------------------------------------------------- speed */
 .set-speed dl.infos dd span:after {
-    content: 'קילומטר לשעה';
+    content: 'קִילוֹמֶטֶר לְשָׁעָה';
 }
 
 .set-speed #sun dl.infos dd:after {
@@ -1816,7 +1816,7 @@ body {
 
     #data {
         position: fixed;
-       top: inherit;
+        top: inherit;
         bottom: 50px;
         width: 100%;
         text-align: center;
