@@ -306,8 +306,8 @@ body {
 }
 
 .zoom-large.view-3D .scale-stretched #solar-system {
-    font-size: 45%;
-    top: 25px;
+    font-size: 120%;
+    top: 20px;
 }
 
 .zoom-large.view-2D .scale-d #solar-system {
