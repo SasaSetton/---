@@ -22,7 +22,7 @@
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/6c1EQF4kdYR.png" />
+              <option name="html5_logo_url" value="mobile/5r8tGK5gh3b.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
@@ -1646,12 +1646,14 @@
             <slidelink slideid="_player.6E62zXJcdh0.6csGl4d5cvV" displaytext="דף פתיחה" expand="false" type="slide" />
             <slidelink slideid="_player.6E62zXJcdh0.5bd5OxlRoW8" displaytext="מידע" expand="false" type="slide" />
             <slidelink slideid="_player.6E62zXJcdh0.6Ungls1SmOq" displaytext="מודל" expand="false" type="slide" />
+            <slidelink slideid="_player.6E62zXJcdh0.6rhcLRq3VD9" displaytext="מודל" expand="false" type="slide" />
             <slidelink slideid="_player.6E62zXJcdh0.5jJU7WrM460" displaytext="פיצול" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6Olhj390uP4" displaytext="שכבה צעירה" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6Olhj390uP4.6XiGIiXmjjg" displaytext="משימה 1" expand="false" type="slide" />
+            <slidelink slideid="_player.6Olhj390uP4.65tclm8HAvn" displaytext="משימה 1" expand="false" type="slide" />
             <slidelink slideid="_player.6Olhj390uP4.5dCyPql9xEL" displaytext="משימה 2" expand="false" type="slide" />
             <slidelink slideid="_player.6Olhj390uP4.6GpFeGGiZva" displaytext="משימה 3" expand="false" type="slide" />
             <slidelink slideid="_player.6Olhj390uP4.6OiPaWnXVJS" displaytext="משימה 4" expand="false" type="slide" />
@@ -1660,6 +1662,7 @@
         <slidelink slideid="_player.6lLZo8T3sKF" displaytext="שכבה בוגרת" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6lLZo8T3sKF.5v5NJXjDpxQ" displaytext="משימה 4" expand="false" type="slide" />
+            <slidelink slideid="_player.6lLZo8T3sKF.5XYzgif3MAb" displaytext="משימה 4" expand="false" type="slide" />
             <slidelink slideid="_player.6lLZo8T3sKF.6BHo4R1qQRl" displaytext="משימה 2" expand="false" type="slide" />
             <slidelink slideid="_player.6lLZo8T3sKF.6nzjElOLwXo" displaytext="משימה 1" expand="false" type="slide" />
             <slidelink slideid="_player.6lLZo8T3sKF.6XNxLi1WHr0" displaytext="משימה 3" expand="false" type="slide" />
