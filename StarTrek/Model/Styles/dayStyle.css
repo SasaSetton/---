@@ -1395,7 +1395,6 @@ dl.infos {
 .saturn #saturn.orbit,
 .uranus #uranus.orbit,
 .neptune #neptune.orbit {
-border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .hide-UI h1,
