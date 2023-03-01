@@ -7,7 +7,6 @@
     <layout name="npnxnanbnsnfns01000000001" font="Fb Maya" controllayout="npnxnanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
     <layout name="pxabnsnfns01000000000" font="Fb Maya" controllayout="pxabnsnfns01000000000" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
     <layout name="pnxnanbnsnfns01000000001" font="Fb Maya" controllayout="pnxnanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
-    <layout name="npxnanbnsnfns01000000001" font="Fb Maya" controllayout="npxnanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
     <layout name="pxnanbnsnfns01000000001" font="Fb Maya" controllayout="pxnanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
   </layouts>
   <control_options>
@@ -22,7 +21,7 @@
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/62a9pLpeLYo.png" />
+              <option name="html5_logo_url" value="mobile/6hsErrbz7Ls.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
@@ -234,30 +233,6 @@
       <control name="logo" enabled="true" />
       <control name="previous" enabled="true" />
       <control name="next" enabled="false" />
-      <control name="swipeleft" enabled="false" />
-      <control name="swiperight" enabled="false" />
-      <control name="fullScreenToggle" enabled="true" />
-      <control name="submit" enabled="false" />
-      <control name="finish" enabled="false" />
-      <control name="submitall" enabled="false" />
-      <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
-        <controls>
-          <control name="search" enabled="false" />
-        </controls>
-      </control>
-      <control name="close_btn" enabled="true" />
-    </control_layout>
-    <control_layout name="npxnanbnsnfns01000000001">
-      <control name="volume" enabled="false" />
-      <control name="seekbar" enabled="false" />
-      <control name="replay" enabled="false" />
-      <control name="pauseplay" enabled="false" />
-      <control name="logo" enabled="true" />
-      <control name="previous" enabled="false" />
-      <control name="next" enabled="true" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
