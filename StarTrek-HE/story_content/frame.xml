@@ -15,13 +15,13 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="מסע בין כוכבים" />
+              <option name="title_text" value="מסע בין כוכבים-עברית" />
             </options>
           </option>
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/6XKg1rhn6Gy.png" />
+              <option name="html5_logo_url" value="mobile/6lXmmZGPMAo.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
