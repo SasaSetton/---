@@ -20,6 +20,7 @@ div#sidebar {
     width: 100px;
     padding: 30px 5px;
     top: 0;
+    background-color: white;
 }
 
 canvas#canvas {
