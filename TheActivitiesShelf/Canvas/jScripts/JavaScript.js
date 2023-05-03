@@ -32,12 +32,12 @@ document.getElementById('controlSize').addEventListener('change', function () {
 	currentSize = this.value;
 	document.getElementById("showSize").innerHTML = this.value;
 });
-document.getElementById('saveToImage').addEventListener('click', function () {
-	downloadCanvas(this, 'canvas', 'masterpiece.png');
-}, false);
+//document.getElementById('saveToImage').addEventListener('click', function () {
+//	downloadCanvas(this, 'canvas', 'masterpiece.png');
+//}, false);
 document.getElementById('eraser').addEventListener('click', eraser);
 document.getElementById('clear').addEventListener('click', createCanvas);
-document.getElementById('save').addEventListener('click', save);
+//document.getElementById('save').addEventListener('click', save);
 //document.getElementById('load').addEventListener('click', load);
 //document.getElementById('clearCache').addEventListener('click', function () {
 //	localStorage.removeItem("savedCanvas");
