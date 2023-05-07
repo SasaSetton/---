@@ -54,46 +54,132 @@
         <canvas id="myCanvas" width="700" height="500"></canvas>
     </div>
     <script>
-        var canvas = document.getElementById("myCanvas");
-        var context = canvas.getContext("2d");
-        var isErasing = false;
-        var lastX, lastY;
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+    let color = "black";
+    let eraser = false;
+    let drawing = false;
+    let lastX, lastY;
 
-        document.getElementById("colorpicker").addEventListener("input", function () {
-            isErasing = false;
-            context.strokeStyle = this.value;
+    updateCanvasSize();
+
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("touchstart", startDrawing);
+
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("touchmove", draw);
+
+    canvas.addEventListener("mouseup", stopDrawing);
+    canvas.addEventListener("touchend", stopDrawing);
+
+    const colors = document.querySelectorAll(".color");
+
+    colors.forEach(color => {
+      color.addEventListener("click", function() {
+        color.style.border = "2px solid black";
+        color.style.margin = "8px";
+        color.style.backgroundColor = color.style.backgroundColor;
+        color.style.width = "16px";
+        color.style.height = "16px";
+
+        color.style.borderRadius = "50%";
+
+        color.classList.add("selected");
+
+        color.parentElement.querySelectorAll(".color:not(.selected)").forEach(color => {
+          color.style.border = "none";
+          color.style.margin = "10px";
+          color.style.backgroundColor = color.style.backgroundColor;
+          color.style.width = "20px";
+          color.style.height = "20px";
+          color.style.borderRadius = "50%";
+          color.classList.remove("selected");
         });
 
-        function setEraser() {
-            isErasing = true;
-        }
+        color.classList.add("selected");
 
-        function draw(e) {
-            if (!isErasing) {
-                context.lineTo(e.offsetX, e.offsetY);
-                context.stroke();
-            } else {
-                context.clearRect(e.offsetX - 5, e.offsetY - 5, 10, 10);
-            }
-        }
+        color.style.border = "2px solid black";
+        color.style.margin = "8px";
+           color.style.backgroundColor = color.style.backgroundColor;
+        color.style.width = "16px";
+        color.style.height = "16px";
+        color.style.borderRadius = "50%";
 
-        canvas.addEventListener("mousedown", function (e) {
-            context.beginPath();
-            context.moveTo(e.offsetX, e.offsetY);
-            canvas.addEventListener("mousemove", draw);
-            lastX = e.offsetX;
-            lastY = e.offsetY;
-        });
+        color.classList.add("selected");
+        color.parentElement.querySelector("#eraser").classList.remove("selected");
 
-        canvas.addEventListener("mouseup", function (e) {
-            canvas.removeEventListener("mousemove", draw);
-        });
+        color.style.border = "2px solid black";
+        color.style.margin = "8px";
+        color.style.backgroundColor = color.style.backgroundColor;
+        color.style.width = "16px";
+        color.style.height = "16px";
+        color.style.borderRadius = "50%";
 
-        canvas.addEventListener("mouseleave", function (e) {
-            canvas.removeEventListener("mousemove", draw);
-        });
+        color.classList.add("selected");
+        eraser = false;
+        color = this.style.backgroundColor;
+      });
+    });
 
-      
+    const eraserButton = document.getElementById("eraser");
+
+    eraserButton.addEventListener("click", function() {
+      eraserButton.classList.add("selected");
+
+      eraserButton.parentElement.querySelectorAll(".color:not(.selected)").forEach(color => {
+        color.style.border = "none";
+        color.style.margin = "10px";
+        color.style.backgroundColor = color.style.backgroundColor;
+        color.style.width = "20px";
+        color.style.height = "20px";
+        color.style.borderRadius = "50%";
+        color.classList.remove("selected");
+      });
+
+      eraserButton.classList.add("selected");
+      eraserButton.style.border = "2px solid black";
+      eraserButton.style.margin = "8px";
+
+      color = "white";
+      eraser = true;
+    });
+
+    window.addEventListener("resize", updateCanvasSize);
+
+    function updateCanvasSize() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    }
+
+    function startDrawing(event) {
+      drawing = true;
+      lastX = event.pageX - canvas.offsetLeft;
+      lastY = event.pageY - canvas.offsetTop;
+    }
+
+    function draw(event) {
+      if (!drawing) return;
+
+      const currentX = event.pageX - canvas.offsetLeft;
+      const currentY = event.pageY - canvas.offsetTop;
+
+      context.strokeStyle = eraser ? "white" : color;
+      context.lineWidth = eraser ? 20 : 5;
+      context.lineJoin = "round";
+      context.lineCap = "round";
+      context.beginPath();
+      context.moveTo(lastX, lastY);
+      context.lineTo(currentX, currentY);
+      context.stroke();
+
+      lastX = currentX;
+      lastY = currentY;
+    }
+
+    function stopDrawing() {
+      drawing = false;
+    }
+  </script>
     </script>
 </body>
 </html>
