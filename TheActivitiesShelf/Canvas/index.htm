@@ -11,7 +11,7 @@
         <template>
             <div class="container">
 
-                <canvas color="blue" width="700" height="500" ref="canvas" :class="{pen: pen, eraser: clean}" @mousedown="mouseDown()" @mouseup="mouseUp()" @mousemove="mouseMove($event)"></canvas>
+                <canvas color="blue" width="500" height="300" ref="canvas" :class="{pen: pen, eraser: clean}" @mousedown="mouseDown()" @mouseup="mouseUp()" @mousemove="mouseMove($event)"></canvas>
                 <div class="tools">
                     <div>
                         <img @click="penSizeShow = !penSizeShow; pen = true; clean = false" src="https://i.ibb.co/9q6ZxqX/pencil.png" alt="Pen" title="Pen" />
