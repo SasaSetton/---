@@ -5,65 +5,8 @@
     
 </head>
 
-
-    <!-- using Bootstrap CSS because lazy to write 3 classes -->
-
 <body dir="rtl">
-    <div id="sidebar">
-        <div class="colorButtons">
-            <h3>צבע עיפרון</h3>
-            <input type="color" id="colorpicker" value="#c81464" class="colorpicker">
-        </div>
-        <div class="colorButtons">
-            <h3>צבע רקע</h3> <input type="color" value="#ffffff" id="bgcolorpicker" class="colorpicker">
-        </div>
-
-        <div class="toolsButtons">
-            <!--<h3>כלים</h3>-->
-            <button id="eraser" class="btn btn-default"><span>מחק</span></button><br />
-            <button id="clear" class="btn btn-danger"> <span>נקה קנבס</span></button>
-            <!--<button id="eraser" class="btn btn-default"><span class="glyphicon glyphicon-erase" aria-hidden="true"></span></button>
-            <button id="clear" class="btn btn-danger"> <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button>-->
-        </div>
-
-        <div class="buttonSize">
-            <!--<h3>עובי העיפרון (<span id="showSize">5</span>)</h3>-->
-            <h3>עובי העיפרון</h3>
-
-            <input type="range" min="1" max="50" value="5" step="1" id="controlSize">
-        </div>
-
-        <div class="canvasSize">
-            <!--<h3>Canvas</h3>-->
-            <!--<div class="input-group">
-                <span class="input-group-addon"></span>
-                <input type="number" id="sizeX" class="form-control" placeholder="sizeX" value="800" class="size">
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon"></span>-->
-                <!--<input type="number" id="sizeY" class="form-control" placeholder="sizeY" value="800" class="size">-->
-            <!--</div>-->
-            <input type="button" class="updateSize btn btn-success" value="עדכן" id="canvasUpdate">
-        </div>
-        <div class="Storage">
-            <!--<h3>שמירה</h3>-->
-            <!--<input type="button" value="שמור" class="btn btn-warning" id="save">-->
-            <!--<input type="button" value="הורדה" class="btn btn-warning" id="saveToImage">-->
-            <!-- Add icon library -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <!-- Auto width -->
-            <button class="btndownload"><i class="fa fa-download"></i> הורדה</button>
-
-            <!--<input type="button" value="Load" class="btn btn-warning" id="load">-->
-            <!--<input type="button" value="Clear" class="btn btn-warning" id="clearCache">-->
-        </div>
-        <!--<div class="extra">
-            <h3>Extra</h3>
-            <a id="saveToImage" class="btn btn-warning">Download</a>
-        </div>-->
-
-    </div>
+    <canvas id="canvas"></canvas>
     <script src="jScripts/JavaScript.js"></script>
 </body>
 </html>

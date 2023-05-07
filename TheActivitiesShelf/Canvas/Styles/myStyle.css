@@ -1,81 +1,10 @@
-﻿
-
-@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@800&display=swap');
-h3 {
-    font-family: Assistant;
-}
-
-.colorButtons {
-    display: block;
-    margin: 20px 0;
+﻿* {
+    margin: 0;
+    padding: 0;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✍️</text></svg>") 5 25,auto;
 }
 
 canvas {
-    cursor: crosshair;
-}
-
-div#sidebar {
-    position: absolute;
-    right: 0;
-    width: 100px;
-    padding: 30px 5px;
-    top: 0;
-    background-color: white;
-}
-
-canvas#canvas {
-    left: 150px;
-    top: 25px;
-}
-
-.btndownload {
-    background-color: DodgerBlue;
-   /* border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;*/
-    margin-bottom: 10px;
     width: 100%;
-/*    background-color: #74B666;
-*/    border-color: white;
-    color: white;
-    font-family: Assistant;
-}
-
-
-.btn {
-    margin-bottom: 10px;
-    width: 100%;
-    background-color: #74B666;
-    border-color: white;
-    color: white;
-    font-family: Assistant;
-}
-
-input {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.input-group {
-    margin-bottom: 10px;
-}
-
-.toolsButtons .btn {
-    background-color: #E6B05F;
-    border-color: white;
-    color: white;
-    font-family: Assistant;
-    /*            width: 48%;
-*/
-}
-
-.sizeButtons .btn {
-    width: 48%;
-}
-
-.colorpicker {
-    background: transparent;
-    height: 40px;
+    height: 100%;
 }
