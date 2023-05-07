@@ -1,12 +1,60 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <title>Canvas drawing with VueJS</title>
     <link href="Styles/myStyle.css" rel="stylesheet" />
-    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 </head>
+<body>
+    <div id="app">
+        <template>
+            <div class="container">
 
-<body dir="rtl">
-    <canvas id="canvas"></canvas>
+                <canvas color="blue" width="700" height="500" ref="canvas" :class="{pen: pen, eraser: clean}" @mousedown="mouseDown()" @mouseup="mouseUp()" @mousemove="mouseMove($event)"></canvas>
+                <div class="tools">
+                    <div>
+                        <img @click="penSizeShow = !penSizeShow; pen = true; clean = false" src="https://i.ibb.co/9q6ZxqX/pencil.png" alt="Pen" title="Pen" />
+                        <!--<div v-show="penSizeShow">
+                            <input type="number" v-model="penSize" min="1" max="50" />
+                        </div>-->
+                    </div>
+                    <div>
+                        <img @click="clean = !clean; penSizeShow = false, pen = false" src="https://i.ibb.co/Jp3HRzd/eraser.png" alt="eraser" title="Cleaner" />
+                        <!--<div v-show="clean" title="Cleaner">
+                            <input type="number" v-model="cleanSize" min="1" max="50" />
+                        </div>-->
+                    </div>
+
+                    <div>
+                        <input type="color" v-model="color" title="Color">
+                    </div>
+
+                    <div>
+                        <button @click="clear()">מחק הכל</button>
+                    </div>
+
+                    <div>
+                        <a :href="dataUrl" @click="saving()" download="Image">הורדה</a>
+
+                        <!--<button @click="save = !save">שמור</button>
+                        <div v-if="save">-->
+                        <!--<select v-model="imageType">
+                            <option value="image/png">PNG</option>
+                            <option value="image/jpeg">JPG</option>
+                        </select>-->
+                        <!--</div>-->
+                    </div>
+
+                </div>
+
+            </div>
+        </template>
+    </div>
     <script src="jScripts/JavaScript.js"></script>
+
+
+
 </body>
 </html>
+<!-- Instagram.com/kamyar_lajani -->
