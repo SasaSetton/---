@@ -8,6 +8,7 @@
     <layout name="pxabnsnfns01000000000" font="Fb Maya" controllayout="pxabnsnfns01000000000" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
     <layout name="pnxanbnsnfns01000000001" font="Fb Maya" controllayout="pnxanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
     <layout name="pxnanbnsnfns01000000001" font="Fb Maya" controllayout="pxnanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
+    <layout name="pxanbnsnfns01000000001" font="Fb Maya" controllayout="pxanbnsnfns01000000001" colorscheme="npnxnanbnsnfns01000000001" string_table="npnxnanbnsnfns01000000001" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -21,7 +22,7 @@
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/686b0u27eXm.png" />
+              <option name="html5_logo_url" value="mobile/6AMfrf8UD0d.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
@@ -264,6 +265,31 @@
       <control name="previous" enabled="true" />
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="false">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pxanbnsnfns01000000001">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="true" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
       <control name="playbackSpeedControl" enabled="false" />
@@ -1651,8 +1677,11 @@
             <slidelink slideid="_player.5njyMiBE42c.6ZoL2l0GVAe" displaytext="משחק" expand="false" type="slide" />
             <slidelink slideid="_player.5njyMiBE42c.65c2XRjZYLn" displaytext="שאלות" expand="false" type="slide" />
             <slidelink slideid="_player.5njyMiBE42c.6Es00fi8WaF" displaytext="שאלות" expand="false" type="slide" />
+            <slidelink slideid="_player.5njyMiBE42c.6EIIZXlbYUz" displaytext="שאלות" expand="false" type="slide" />
             <slidelink slideid="_player.5njyMiBE42c.6RKn182Esba" displaytext="שאלות" expand="false" type="slide" />
-            <slidelink slideid="_player.5njyMiBE42c.6V60n7t8IHI" displaytext="שאלות" expand="false" type="slide" />
+            <slidelink slideid="_player.5njyMiBE42c.6V60n7t8IHI" displaytext="למה נכתב" expand="false" type="slide" />
+            <slidelink slideid="_player.5njyMiBE42c.6F2PbPW6EWu" displaytext="שאלות" expand="false" type="slide" />
+            <slidelink slideid="_player.5njyMiBE42c.6GEdGYtuguO" displaytext="סיפור" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6eXYHAjXa75" displaytext="המפלצות של נעם" expand="true" type="slide">
@@ -1667,7 +1696,9 @@
             <slidelink slideid="_player.6eXYHAjXa75.6cAa2jKvoQh" displaytext="משימה" expand="false" type="slide" />
             <slidelink slideid="_player.6eXYHAjXa75.5mFwRuljDA1" displaytext="משימה" expand="false" type="slide" />
             <slidelink slideid="_player.6eXYHAjXa75.5wnPKPLZi6s" displaytext="משימה" expand="false" type="slide" />
-            <slidelink slideid="_player.6eXYHAjXa75.61EGzWaf4vF" displaytext="שאלות" expand="false" type="slide" />
+            <slidelink slideid="_player.6eXYHAjXa75.61EGzWaf4vF" displaytext="למה נכתב" expand="false" type="slide" />
+            <slidelink slideid="_player.6eXYHAjXa75.5zbuI62qWx0" displaytext="הקראת סיפור" expand="false" type="slide" />
+            <slidelink slideid="_player.6eXYHAjXa75.6rKzxzkbNCC" displaytext="שאלות" expand="false" type="slide" />
             <slidelink slideid="_player.6eXYHAjXa75.6288BKROJqa" displaytext="משחק" expand="false" type="slide" />
             <slidelink slideid="_player.6eXYHAjXa75.6FxtVofU3zF" displaytext="משחק" expand="false" type="slide" />
             <slidelink slideid="_player.6eXYHAjXa75.65sBsZGu1lr" displaytext="משחק" expand="false" type="slide" />
