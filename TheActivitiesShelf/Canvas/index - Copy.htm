@@ -1,61 +1,100 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Canvas drawing with VueJS</title>
-    <link href="Styles/myStyle - Copy.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <title>Canvas Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lateef:wght@800&display=swap');
+        #canvas-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #myCanvas {
+            border: solid black;
+        }
+
+        #tools-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-right: 20px;
+            padding-left: 20px;
+            font-family: Assistant;
+        }
+
+            #tools-container button {
+                margin-bottom: 10px;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+
+        .eraser-icon {
+            width: 20px;
+            height: 20px;
+            background-image: url("https://i.ibb.co/Jp3HRzd/eraser.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
-    <div id="app">
-        <template>
-            <div class="container">
+    <div id="canvas-container">
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        <div id="tools-container">
+            צֶבַע
+            <input type="color" id="colorpicker"><br />
 
-                <canvas width="700" height="500" ref="canvas" :class="{pen: pen, eraser: clean}" @mousedown="mouseDown()" @mouseup="mouseUp()" @mousemove="mouseMove($event)"></canvas>
-                <div class="tools">
-                    <div>
-                        <img @click="penSizeShow = !penSizeShow; pen = true; clean = false" src="https://i.ibb.co/9q6ZxqX/pencil.png" alt="Pen" title="Pen" />
-                        <!--<div v-show="penSizeShow">
-                            <input type="number" v-model="penSize" min="1" max="50" />
-                        </div>-->
-                    </div>
-                    <div>
-                        <img @click="clean = !clean; penSizeShow = false, pen = false" src="https://i.ibb.co/Jp3HRzd/eraser.png" alt="eraser" title="Cleaner" />
-                        <!--<div v-show="clean" title="Cleaner">
-                            <input type="number" v-model="cleanSize" min="1" max="50" />
-                        </div>-->
-                    </div>
+            <button onclick="setEraser()" class="eraser-icon"> </button>
 
-                    <div>
-                        <input type="color" v-model="color" title="Color">
-                    </div>
 
-                    <div>
-                        <button @click="clear()">מחק הכל</button>
-                    </div>
-
-                    <div>
-                        <a :href="dataUrl" @click="saving()" download="Image">הורדה</a>
-
-                        <!--<button @click="save = !save">שמור</button>
-                        <div v-if="save">-->
-                            <!--<select v-model="imageType">
-            <option value="image/png">PNG</option>
-            <option value="image/jpeg">JPG</option>
-        </select>-->
-                        <!--</div>-->
-                    </div>
-
-                </div>
-
-            </div>
-        </template>
+        </div>
     </div>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        var isErasing = false;
+        var lastX, lastY;
 
-    <script src="jScripts/JavaScript - Copy.js"></script>
+        document.getElementById("colorpicker").addEventListener("input", function () {
+            isErasing = false;
+            context.strokeStyle = this.value;
+        });
 
+        function setEraser() {
+            isErasing = true;
+        }
 
+        function draw(e) {
+            if (!isErasing) {
+                context.lineTo(e.offsetX, e.offsetY);
+                context.stroke();
+            } else {
+                context.clearRect(e.offsetX - 5, e.offsetY - 5, 10, 10);
+            }
+        }
 
+        canvas.addEventListener("mousedown", function (e) {
+            context.beginPath();
+            context.moveTo(e.offsetX, e.offsetY);
+            canvas.addEventListener("mousemove", draw);
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+        });
+
+        canvas.addEventListener("mouseup", function (e) {
+            canvas.removeEventListener("mousemove", draw);
+        });
+
+        canvas.addEventListener("mouseleave", function (e) {
+            canvas.removeEventListener("mousemove", draw);
+        });
+
+      
+    </script>
 </body>
 </html>
-<!-- Instagram.com/kamyar_lajani -->
