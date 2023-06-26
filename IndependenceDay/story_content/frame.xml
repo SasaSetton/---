@@ -22,7 +22,7 @@
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/5Wz6gvKNXBD.png" />
+              <option name="html5_logo_url" value="mobile/6YHPi6owfXj.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
@@ -117,6 +117,7 @@
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -141,6 +142,7 @@
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
       <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -165,6 +167,7 @@
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="true" />
       <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -189,6 +192,7 @@
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -213,6 +217,7 @@
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
       <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -237,6 +242,7 @@
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -261,6 +267,7 @@
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -285,6 +292,7 @@
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
+      <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -1620,6 +1628,9 @@
       <string id="acc_skipnavigation">חזור למעלה</string>
       <string id="slide_text_chk">טקסט שקופית</string>
       <string id="spacebar_key">רווח</string>
+      <string id="streaming_video_local_playback_learn_more">למד עוד</string>
+      <string id="streaming_video_local_playback_republish">כדי לצפות בסרטון הזה, השתמש בתכונת התצוגה המקדימה ב-Storyline 360, העלה את הפלט שפורסם לשרת, פרסם ל-Review 360, או שנה לאיכות וידאו סטטית.</string>
+      <string id="streaming_video_local_playback_title">הזרמת וידאו אינה זמינה להפעלה מקומית.</string>
       <string id="submitall">שלח הכול</string>
       <string id="acc_submitall">שלח הכול</string>
       <string id="submit">עבור לתרגיל הבא</string>
