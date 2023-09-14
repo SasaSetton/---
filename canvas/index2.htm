@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lateef:wght@800&display=swap');
+        #canvas-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #myCanvas {
+            border: solid black;
+            background-color: #00800000;
+            
+        }
+
+        #tools-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-right: 20px;
+            padding-left: 20px;
+            font-family: Assistant;
+        }
+
+            #tools-container button {
+                margin-bottom: 10px;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+
+        .eraser-icon {
+            width: 20px;
+            height: 20px;
+            background-image: url("https://i.ibb.co/Jp3HRzd/eraser.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <div id="tools-container">
+            צֶבַע
+            <input type="color" id="colorpicker">
+            <br />
+            <button onclick="setEraser()" class="eraser-icon"> </button>
+        </div>
+        <canvas id="myCanvas" width="400" height="300"></canvas>
+
+    </div>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        var isErasing = false;
+        var lastX, lastY;
+
+        document.getElementById("colorpicker").addEventListener("input", function () {
+            isErasing = false;
+            context.strokeStyle = this.value;
+        });
+
+        function setEraser() {
+            isErasing = true;
+        }
+
+        function draw(e) {
+            if (!isErasing) {
+                context.lineTo(e.offsetX, e.offsetY);
+                context.stroke();
+            } else {
+                context.clearRect(e.offsetX - 5, e.offsetY - 5, 10, 10);
+            }
+        }
+
+        canvas.addEventListener("mousedown", function (e) {
+            context.beginPath();
+            context.moveTo(e.offsetX, e.offsetY);
+            canvas.addEventListener("mousemove", draw);
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+        });
+
+        canvas.addEventListener("mouseup", function (e) {
+            canvas.removeEventListener("mousemove", draw);
+        });
+
+        canvas.addEventListener("mouseleave", function (e) {
+            canvas.removeEventListener("mousemove", draw);
+        });
+
+      
+    </script>
+</body>
+</html>
