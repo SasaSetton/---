@@ -70,7 +70,7 @@
     var saveButton = document.getElementById('save');
 
     saveButton.addEventListener('click', function () {
-        var imageName = prompt('Please enter image name');
+        var imageName = prompt('תן/י שם לציור:');
         var canvasDataURL = canvas.toDataURL();
         var a = document.createElement('a');
         a.href = canvasDataURL;
